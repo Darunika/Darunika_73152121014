@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 10px;
+            background-color: gray;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        th, td {
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+        }
+
+        th {
+            background-color: white;
+            color: black;
+            border-radius: 8px;
+            
+        }
+
+        td {
+            background-color: rgb(39, 157, 224);
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        #btn {
+            background-color: rgb(39, 157, 224); 
+            border: 0px;
+            font-size: larger;
+           }
+        #result{
+            background-color: rgb(39, 157, 224);
+            border: 0px;
+            font-size: larger;
+        }
+    </style>
+    <script>
+        
+    function calculate() {
+    var p = document.getElementById("result").value;
+    var q = eval(p);//Evaluate the value of p
+    document.getElementById("result").value = q;
+    }
+    function display(value) {
+    document.getElementById("result").value += value;
+    }
+    function clearScreen() {
+    document.getElementById("result").value = ""; 
+    }
+
+    
+    </script>
+</head>
+<body>
+    <table class="calculator" >
+        <tr>
+          <td colspan="4"> <input  type="text" id="result" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+            <td> <input type="button" value="%" onclick="display('%')"id="btn" /> </td>
+            <td> <input type="button" value="&#8592" onclick="display('&#8592')" id="btn"/> </td>
+            <td> <input type="button" value="/" onclick="display('/')" id="btn"/> </td>
+          </tr>
+        
+        <tr>
+          <td> <input type="button" value="7" onclick="display('7')" id="btn"/> </td>
+          <td> <input type="button" value="8" onclick="display('8')" id="btn"/> </td>
+          <td> <input type="button" value="9" onclick="display('9')" id="btn"/> </td>
+          <td> <input type="button" value="*" onclick="display('*')"id="btn" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="4" onclick="display('4')" id="btn"/> </td>
+            <td> <input type="button" value="5" onclick="display('5')" id="btn"/> </td>
+            <td> <input type="button" value="6" onclick="display('6')" id="btn"/> </td>
+            <td> <input type="button" value="-" onclick="display('-')" id="btn"/> </td>
+          </tr>
+        <tr>
+            <td> <input type="button" value="1" onclick="display('1')"id="btn" /> </td>
+            <td> <input type="button" value="2" onclick="display('2')" id="btn"/> </td>
+            <td> <input type="button" value="3" onclick="display('3')"id="btn" /> </td>
+            <td> <input type="button" value="+" onclick="display('+')" id="btn"/> </td>
+          </tr>
+        <tr>
+           <td> <input type="button" value="00" onclick="display('00')" id="btn"/> </td>  
+          <td> <input type="button" value="0" onclick="display('0')" id="btn" /> </td>
+          <td> <input type="button" value="." onclick="display('.')" id="btn"/> </td>
+          <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
+        </tr>
+      </table>
+</body>
+</html>
+
+

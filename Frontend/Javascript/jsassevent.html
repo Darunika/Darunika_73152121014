@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function hi(){
+        alert("Hi,there");
+    }
+   
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+function factorial(){
+            let a=parseInt(document.getElementById("n1").value);
+            let fact=1;
+
+            for(let i=1;i<=a;i++){
+                fact=fact*i;
+            }
+            document.getElementById("ResultDiv").innerHTML=fact;
+        }
+
+
+        function myFunction(x) {
+  x.style.background = "yellow";
+}
+function onmouse(){
+alert("Good Evening")
+}
+/*function onchang(){
+var bg=document.getElementById("oc");
+document.body.style.backgroundColor = "red";
+}
+
+function onclic(){
+    alert("CLICKED ME");
+}
+function omo(){
+   document.getElementById("om").style.color="blue";
+
+}*/
+    </script>
+</head>
+<body>
+    <p>Click the button to display the date.</p>
+    <button onclick="displayDate()">The time is?</button>
+    <p id="demo"></p>
+    <br>
+    <button onclick="hi()">Click me</button>
+    <br><br>
+    
+    Enter the Number <input type="text" id="n1" value="Enter the number" onfocus="
+        this.value=''" onblur="factorial()"/>
+         <div id="ResultDiv"></div>
+    <br><br>
+    Enter your name: <input type="text" onfocusin="myFunction(this)">
+
+    <p onmouseover="onmouse()">ON MOUSE OVER</p>
+    <!-- <p onchange="onchang()" style="background-color: blueviolet;" id="oc"><input type="text"> ON change</p>
+<button onclick="onclic()">Click</button>
+<p onmouseout="omo()" style="background-color: pink" id="om">on mouse out</p> -->
+</body>
+</html>
+
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my{
+        background-image: url("blur.jpg");
+        background-size: 100% 100%;
+          opacity: 1; 
+          width: 45%;
+          height: 450px; 
+          opacity: 0.9;
+          position: relative;
+        }
+        #image{
+            position: absolute;
+            top: 9%;
+            left: 10%;
+            padding-top: 8%;
+            opacity: 0.9;
+            width: 80%;
+            height: 320px;
+            background-color: black;
+            border-radius: 5px;
+        }h4,h2,b{
+            color: white;
+        }
+        hr{
+            width: 40%;
+        }
+        ::placeholder{
+            color:white;
+        }
+        img{
+            border-radius: 50%;
+            width: 20%;
+            height: 100px;
+            z-index: 1;
+            position: relative;
+        }
+        input{
+             background-color:black;
+            color:white;
+            border: 2px solid black;
+        }
+        #button{
+            background-color: green;
+            width: 20%;
+            height: 30px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div>
+        <div id="my">
+            <img src="avatar.png" alt="">
+    <div id="image">
+        <center><h2>LOGIN WINDOW</h2></center>
+        <center>
+
+        <input type="text" placeholder="Your E-Mail Address"><hr>
+        
+        <input type="text" placeholder="Your Password"><hr>
+        
+        <input type="checkbox"><b>Agree with <u>Terms & Conditions</u></b><br><br>
+        <center><input type="submit" value="Login" id="button"></center>
+    </div>
+</div>
+</div>
+</center>
+</body>
+</html>

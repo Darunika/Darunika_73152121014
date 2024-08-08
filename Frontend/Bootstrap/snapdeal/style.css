@@ -1,0 +1,33 @@
+#my{
+    text-indent: 300px;
+}
+#nav1{
+    text-indent: 50px;
+}
+.new{
+    text-decoration: none;
+    display: inline-block;
+}
+a{
+    color: white;
+}
+#nav{
+    background-color: rgb(221, 38, 38);
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+#home{
+    background-color: rgb(231, 16, 16);
+}
+img{
+    padding-left: 30px;
+    height: 60px;
+}
+input{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}

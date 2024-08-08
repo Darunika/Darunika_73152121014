@@ -1,0 +1,8 @@
+.external{
+border: 2px solid rgb(165, 227, 57);
+text-align: center;
+width: 50%;
+color: rgb(231, 222, 211);
+background-color: rgb(234, 144, 217);
+cursor: pointer;
+}
